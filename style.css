@@ -1,0 +1,47 @@
+@keyframes vibgyor {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+body {
+    /* VIBGYOR Background */
+    background: linear-gradient(-45deg, #9400D3, #4B0082, #0000FF, #00FF00, #FFFF00, #FF7F00, #FF0000);
+    background-size: 400% 400%;
+    animation: vibgyor 15s ease infinite;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+.glass {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.floating-element {
+    position: absolute;
+    font-size: 2rem;
+    animation: floatUp 10s linear infinite;
+    z-index: 0;
+    opacity: 0.6;
+}
+@keyframes floatUp {
+    0% { transform: translateY(100vh) rotate(0deg); }
+    100% { transform: translateY(-15vh) rotate(360deg); }
+}
+.content {
+    position: relative;
+    z-index: 10;
+}
+.product-card {
+    padding: 12px;
+    border-radius: 16px;
+}
+.product-img {
+    height: 140px;
+    object-fit: cover;
+    border-radius: 12px;
+}

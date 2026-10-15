@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Pitara</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-white">
+    <!-- Floating Elements -->
+    <div class="floating-element" style="left: 10%; animation-duration: 8s;">⭐</div>
+    <div class="floating-element" style="left: 25%; animation-duration: 12s; font-size: 3rem;">🎁</div>
+    <div class="floating-element" style="left: 50%; animation-duration: 9s;">✨</div>
+    <div class="floating-element" style="left: 75%; animation-duration: 15s;">⭐</div>
+    <div class="floating-element" style="left: 85%; animation-duration: 11s; font-size: 2.5rem;">🎁</div>
+    <div class="floating-element" style="left: 40%; animation-duration: 14s; font-size: 1.5rem;">✨</div>
+
+    <div class="content max-w-md mx-auto py-8 px-4">
+        <!-- Header -->
+        <div class="text-center mb-8">
+        <img src="images/logo.png" alt="Product Pitara Logo" class="w-32 h-32 mx-auto rounded-full border-4 border-yellow-300 shadow-lg object-cover mb-4 bg-white">            <h1 class="text-3xl font-bold mb-2 drop-shadow-md">Product Pitara</h1>
+            <p class="text-lg italic font-medium drop-shadow-md">Unlock a World of Wonders!</p>
+        </div>
+
+        <!-- Products Grid Container (Populated by JS) -->
+        <div id="product-grid" class="grid grid-cols-2 gap-4 pb-20">
+            <!-- JavaScript will insert products here -->
+        </div>
+    </div>
+
+    <!-- Floating Instagram DM Button -->
+    <a href="https://www.instagram.com/theproduct_pitara?mdxt=MjVtOTgwZ2JjMTh1" target="_blank" class="fixed bottom-6 right-6 bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 text-white rounded-full p-4 shadow-xl hover:scale-110 transition-transform z-50 flex items-center justify-center" style="width: 60px; height: 60px; text-decoration: none;">
+        <i class="fab fa-instagram text-3xl"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
